@@ -39,11 +39,11 @@ const Login1 = () => {
   const nav = useNavigate();
 
   const handleS = (e) => {
-    console.log(e);
+    // console.log(e);
     // const ele = { email: "www@www.com", password: "wwwwww" };
     // dispatch(postLoginUser(ele));
     // dispatch(sessionCheck());
-    // nav("/", { replace: true });
+    nav("/admin", { replace: true });
   };
   return (
     <>
@@ -76,7 +76,7 @@ const Login1 = () => {
               <Formik
                 initialValues={initialValues}
                 validationSchema={validationSchema1}
-                // onSubmit={handleS}
+                onSubmit={handleS}
               >
                 {({
                   values,
@@ -90,7 +90,7 @@ const Login1 = () => {
                   <Form
                     className="d-flex flex-wrap justify-content-between text-center p-3 gap-2"
                     style={{ width: "370px" }}
-                    onSubmit={handleS}
+                    onSubmit={handleSubmit}
                   >
                     {fields.map((e, i) => (
                       <Field
