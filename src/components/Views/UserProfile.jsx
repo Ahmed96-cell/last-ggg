@@ -11,14 +11,15 @@ const UserProfile = () => {
   return (
     <>
       <div
-        className="d-flex w-100 py-5 flex-wrap"
+        className="d-flex w-100 py-5"
         style={{
           backgroundColor: "#f1f5fc",
           padding: "15px",
+          flexWrap: "wrap",
         }}
       >
         <Col lg={8} md={8}>
-          <Card className="px-2 pt-2" style={{ paddingBottom: "6rem" }}>
+          <Card className="p-2">
             <div
               className="d-flex align-items-center justify-content-between"
               style={{ borderBottom: "1px solid rgba(0, 0, 0, .1)" }}
@@ -42,20 +43,27 @@ const UserProfile = () => {
                 <Form.Label>Phone Number</Form.Label>
                 <Form.Control type="text" placeholder="Phone Number" />
               </Form.Group>
-              {/* <Form.Group className="col-lg-6" controlId="nationalID">
+              <Form.Group className="col-lg-6" controlId="nationalID">
                 <Form.Label>National ID</Form.Label>
                 <Form.Control type="text" placeholder="National ID" />
-              </Form.Group> */}
-              {/* <Form.Group className="col-lg-5" controlId="Address">
+              </Form.Group>
+              <Form.Group className="col-lg-5" controlId="Address">
                 <Form.Label>Address</Form.Label>
                 <Form.Control type="text" placeholder="Address" />
-              </Form.Group> */}
-
-              {/* <Form.Group className="col-lg-6" controlId="dateOfBirth">
+              </Form.Group>
+              <Form.Group className="col-lg-6" controlId="currentPassword">
+                <Form.Label>Current Password</Form.Label>
+                <Form.Control type="Password" placeholder="Current Password" />
+              </Form.Group>
+              <Form.Group className="col-lg-5" controlId="password">
+                <Form.Label>New Password</Form.Label>
+                <Form.Control type="Password" placeholder="New Password" />
+              </Form.Group>
+              <Form.Group className="col-lg-6" controlId="dateOfBirth">
                 <Form.Label>Date of Birth</Form.Label>
                 <Form.Control type="date" placeholder="Date of Birth" />
-              </Form.Group> */}
-              <Form.Group className="col-lg-11 text-end">
+              </Form.Group>
+              <Form.Group className="col-lg-5 text-end">
                 <div
                   className="d-flex align-items-end justify-content-end"
                   style={{ height: "70px" }}

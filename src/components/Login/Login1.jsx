@@ -43,7 +43,7 @@ const Login1 = () => {
     // const ele = { email: "www@www.com", password: "wwwwww" };
     // dispatch(postLoginUser(ele));
     // dispatch(sessionCheck());
-    nav("/admin", { replace: true });
+    nav("/user", { replace: true });
   };
   return (
     <>
