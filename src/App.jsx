@@ -65,8 +65,8 @@ function App() {
           theme="colored"
         />
         <Routes>
-          {/* <Route path="*" element={<Navigate to="/" />} /> */}
-          <Route path="/" element={<FormLogin />} />
+          <Route path="/" element={<Navigate to="/login" />} />
+          {/* <Route path="/" element={<FormLogin />} /> */}
           {/* <Route path="/" element={<Navigate to="/login" replace />} /> */}
           <Route path="/login" element={<FormLogin />} />
           <Route path="/forgot-password" element={<ForgotPassword1 />} />
